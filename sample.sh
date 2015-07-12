@@ -5,5 +5,5 @@ for videodevice in /dev/video* ; do
     ./v4l2-cameraping -d $videodevice
     echo -n "Enter camera name: "
     read cameraname
-    echo Detected camera $cameraname
+    echo "Device \"$videodevice\" is camera \"$cameraname\"."
 done
