@@ -19,6 +19,7 @@
 #include <sys/stat.h>
 #include <sys/mman.h>
 #include <sys/ioctl.h>
+#include <unistd.h>
 
 #include <linux/videodev2.h>
 
@@ -257,7 +258,7 @@ static void open_device(void)
         }
 }
 
-static void usage(FILE *fp, int argc, char **argv)
+static void usage(FILE *fp, __attribute__((unused)) int argc, char **argv)
 {
         fprintf(fp,
                  "Usage: %s [options]\n\n"
