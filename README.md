@@ -1,4 +1,7 @@
 # v4l2-cameraping
+
+![C CI](https://github.com/christianhujer/v4l2-cameraping/workflows/C%20CI/badge.svg)
+
 Camera ping command for video4linux2.
 
 It activates a camera, reads from stdin and deactivates the camera.
