@@ -41,7 +41,7 @@ static void errno_exit(const char *s)
         exit(EXIT_FAILURE);
 }
 
-static int xioctl(int fh, int request, void *arg)
+static int xioctl(int fh, long unsigned int request, void *arg)
 {
         int r;
 
